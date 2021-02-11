@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "builders",
+  "id": "zones",
   "version": "${version}",
 
   "name": "Fabric Zones",
@@ -32,7 +32,7 @@
     "fabricloader": ">=0.7.1",
     "fabric": "*",
     "fabric-language-kotlin": "*",
-    "minecraft": "1.17.x"
+    "minecraft": ">=1.16.4"
   },
   "suggests": {
     "flamingo": "*"
