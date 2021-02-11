@@ -49,7 +49,7 @@ abstract class ThreadedAnvilChunkStorageMixin {
         ChunkSection[] sections = ((WorldChunkAccessor) chunk).getSections();
 
         for (Vec3i xyz : cloakedBlocks) {
-            int sectionIndex = fakeChunk.getSectionIndex(xyz.getY());
+            int sectionIndex = xyz.getY() >> 4;
 
             sections[sectionIndex] = removeCloakedBlock(
                     new BlockPos(xyz.getX(), xyz.getY(), xyz.getZ()),
