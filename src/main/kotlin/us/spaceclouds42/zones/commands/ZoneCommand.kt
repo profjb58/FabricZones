@@ -136,6 +136,8 @@ class ZoneCommand : ICommand {
                                         .argument("hex", StringArgumentType.word())
                                         .suggests { _, builder ->
                                             builder.suggest("rainbow")
+                                            builder.suggest("00ff00")
+                                            builder.suggest("0 255 0")
 
                                             builder.buildFuture()
                                         }
@@ -411,7 +413,7 @@ class ZoneCommand : ICommand {
         val y = player.y
         val z = player.z
 
-        if (ZoneManager.getZone(name)?.playerInZone(player, x, y, z) == false) {
+        if (ZoneManager.getZone(name)?.positionInZone(player.world, x, y, z) == false) {
             context.source.sendError(
                 red("You are not in the zone!")
             )

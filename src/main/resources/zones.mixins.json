@@ -4,11 +4,13 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ChunkSectionAccessor",
-    "PalettedContainerAccessor",
+    "EntityMixin",
     "PlayerMoveC2SPacketAccessor",
+    "ProjectileEntityMixin",
     "ServerPlayerEntityMixin",
     "ServerPlayNetworkHandlerMixin",
     "ThreadedAnvilChunkStorageMixin",
+    "TridentEntityAccessor",
     "WorldChunkAccessor"
   ],
   "injectors": {
