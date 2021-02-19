@@ -34,7 +34,7 @@ abstract class ThreadedAnvilChunkStorageMixin {
             method = "sendChunkDataPackets",
             at = @At(
                     value = "INVOKE",
-                    target = "Lnet/minecraft/network/packet/s2c/play/ChunkDataS2CPacket;<init>(Lnet/minecraft/world/chunk/WorldChunk;)V"
+                    target = "Lnet/minecraft/network/packet/s2c/play/ChunkDataS2CPacket;<init>(Lnet/minecraft/world/chunk/WorldChunk;I)V"
             )
     )
     private void editChunkDataPacket(Args args, ServerPlayerEntity player, Packet<?>[] packets, WorldChunk chunk) {
