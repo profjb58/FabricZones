@@ -9,5 +9,6 @@ us.spaceclouds42.zones.data.spec
 us.spaceclouds42.zones.ext
 us.spaceclouds42.zones.log
 us.spaceclouds42.zones.mixin
+us.spaceclouds42.zones.mixin.smuggling
 us.spaceclouds42.zones.utils
 
